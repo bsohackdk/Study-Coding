@@ -1,0 +1,19 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+
+def Menu():
+    print ('-'*40)
+    print ('教务管理系统 V1.1')
+    print ('1.新增学员信息: ')
+    print ('2.删除学员信息: ')
+    print ('3.修改学员信息: ')
+    print ('4.遍历学员信息: ')
+    print ('5.退出系统!')
+    print ('-'*40)
+    
+    def addNewStu():
+        Name = input('请输入学员姓名: ')
+        StuId = input('请输入学员ID: ')
+        age = input('请输入学员年龄: ')
+        
+        stuInfo = {}    #将学员的信息存储到
