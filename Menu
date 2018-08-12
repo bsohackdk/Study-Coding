@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
 
+#定义一个函数，用于现实教务管理系统首页，如下：
 def Menu():
     print ('-'*40)
     print ('教务管理系统 V1.1')
@@ -11,9 +12,49 @@ def Menu():
     print ('5.退出系统!')
     print ('-'*40)
     
+#下面这个函数主要是实现新增学员功能，通过input来获取输入的信息。
     def addNewStu():
         Name = input('请输入学员姓名: ')
         StuId = input('请输入学员ID: ')
         age = input('请输入学员年龄: ')
         
-        stuInfo = {}    #将学员的信息存储到
+        stuInfo = {}       #将学员的信息存储到字典中
+        stuInfo['name'] = Name
+        stuInfo['id'] = StuId
+        stuInfo['age'] = age
+        
+        students.append(stuInfo)
+        
+students = []
+
+while Ture:
+    
+    Menu()       #调用函数，显示菜单
+    key = int(input("请输入您的选项: "))
+    
+    if key == 1:
+        addNewStu()
+        
+    elif key == 2:
+        pass
+    
+    elif key == 3:
+        pass
+    
+    elif key == 4:
+        print('-'*40)
+        print('下面是所有学员信息')
+        
+        for temp in students:
+            print ('%s    %s    %s'%(temp['name'],temp['id'],temp['age']))
+            
+    elif key == 5:
+        quitConfirm = input('请确认是否退出，如果确认请输入\'yes'\',如果不退出请输入任意字符!')
+        
+        if quitConfirm == 'yes':
+            break
+            
+    else:
+        print('输入有误，请从新输入！')
+        
+        
