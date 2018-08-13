@@ -27,7 +27,7 @@ def Menu():
         
 del delStu():
     delNum = int((input'请输入要删除的信息序号： '))
-    del students[delNUm]
+    del students[delNUm]                               #取得一个值，删除字典下标
         
 students = []
 
