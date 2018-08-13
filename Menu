@@ -25,6 +25,10 @@ def Menu():
         
         students.append(stuInfo)
         
+del delStu():
+    delNum = int((input'请输入要删除的信息序号： '))
+    del students[delNUm]
+        
 students = []
 
 while Ture:
@@ -36,7 +40,7 @@ while Ture:
         addNewStu()
         
     elif key == 2:
-        pass
+        delStu()
     
     elif key == 3:
         pass
