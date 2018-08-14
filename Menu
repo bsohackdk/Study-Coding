@@ -13,7 +13,7 @@ def Menu():
     print ('-'*40)
     
 #下面这个函数主要是实现新增学员功能，通过input来获取输入的信息。
-    def addNewStu():
+    def addNewStu(studentTemp):
         Name = input('请输入学员姓名: ')
         StuId = input('请输入学员ID: ')
         age = input('请输入学员年龄: ')
@@ -25,9 +25,14 @@ def Menu():
         
         students.append(stuInfo)
         
-del delStu():
+del delStu(students):
     delNum = int((input'请输入要删除的信息序号： '))
     del students[delNUm]                               #取得一个值，删除字典下标
+    
+del chgInfo():
+    chgNum = students[int(input('请输入你需要修改的序号： '))]
+    messageInfo = input('请输入你要修改的具体内容： ')
+    dicInfo = chgNum[input('请输入你需要修改的项目名称，如：age、name、id  ')]
         
 students = []
 
